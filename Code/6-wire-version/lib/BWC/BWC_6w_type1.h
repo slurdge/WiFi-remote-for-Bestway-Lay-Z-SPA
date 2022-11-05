@@ -11,6 +11,9 @@ const int dsppins[] = {D4, D5, D6, D7};
 #elif defined(PCB_V2B)
 const int ciopins[] = {D1, D2, D5};
 const int dsppins[] = {D6, D4, D3, D7};
+#elif defined(NO_PCB)
+const int ciopins[] = {D4, D3, D2};
+const int dsppins[] = {D7, D6, D5, D0};
 #else
 const int ciopins[] = {D7, D2, D1};
 const int dsppins[] = {D5, D4, D3, D6};

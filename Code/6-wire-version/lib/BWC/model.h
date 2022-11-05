@@ -7,7 +7,8 @@
 
 //If using/testing the new PCB choose PCB_V2
 //#define PCB_V1
-#define PCB_V2  //The PCB with rounded corners
+//#define PCB_V2  //The PCB with rounded corners
+#define NO_PCB
 /*
 There is no PCB_V2B yet. Use PCB_V2 (easiest) and connect wires like this:
 CIO_DATA (wire #3) : D1 (port H1A)
@@ -21,4 +22,6 @@ DSP_CS (wire #5)   : D3 (port H1A)
 author: @SigmaPic
 */
 //#define PCB_V2B  
+#if defined(PCB_V2)
 #warning "USING PINOUT FOR PCB V2 (PCB WITH ROUND CORNERS). EDIT lib/BWC/model.h IF USING OTHER PCB!"
+#endif
